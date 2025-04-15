@@ -203,7 +203,7 @@ main > h2 {
 }
 
 .el {
-     height: 100%;
+     height: 300px; /* Or any fixed height that suits your design */
      width: 17.5%;
      transition: 0.2s;
      position: relative;
@@ -237,18 +237,20 @@ main > h2 {
 }
 
 .image {
-     width: 250%;
+     width: 100%; /* Changed from 250% */
      height: 100%;
      display: flex;
-     position: absolute;
      justify-content: center;
      align-items: center;
+     position: relative; /* Changed from absolute */
 }
 
 .image img {
      max-width: 100%;
      height: 100%;
+     object-fit: cover; /* Added object-fit */
 }
+
 .content {
      display: flex;
      align-items: center;
@@ -311,4 +313,71 @@ ul > li > a {
 
 .redes ul > li > a {
      padding-left: 7px;
+}
+
+/* Media query for mobile devices (example: screens smaller than 768px) */
+@media (max-width: 768px) {
+  .navegacao {
+    flex-direction: column; /* Stack navigation items vertically */
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .titulo {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .links {
+    width: 100%;
+    flex-direction: column; /* Stack links vertically */
+    margin-right: 0;
+  }
+
+  .links > a {
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  .sobre {
+    flex-direction: column; /* Stack "sobre" sections vertically */
+    height: auto;
+  }
+
+  .nossa {
+    width: 80%; /* Make "nossa" sections wider */
+    margin: 10px auto;
+  }
+
+  .historia {
+    margin-top: 40px;
+  }
+
+  .ht {
+    width: 90%; /* Make "ht" sections wider */
+  }
+
+  .main {
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column; /* Stack elements in the container */
+    width: 90%;
+    height: auto;
+  }
+
+  .el {
+    width: 100%; /* Each element takes full width */
+    margin-bottom: 10px;
+  }
+
+  .el:hover {
+    width: 100%; /* On hover, still take full width */
+  }
+
+  .containerfooter-grid {
+    grid-template-columns: repeat(1, 1fr); /* Stack footer columns */
+    text-align: center;
+  }
 }
