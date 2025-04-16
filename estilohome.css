@@ -33,11 +33,19 @@ html {
      height: 7vh;
      padding: 2rem;
 }
+
+.navegacao > img {
+     border-radius: 13%;
+     width:  5%;
+     margin-top: 5%;
+     margin-left: 7%;
+}
+
 .titulo {
      display: flex;
      align-items: center;
      justify-content: center;
-     margin-left: 7%;
+     margin-right: 13%;
 }
 .titulo > h2 {
      font-weight: bold;
@@ -379,6 +387,11 @@ ul > li > a {
     flex-direction: column; 
     height: auto;
     padding: 10px 0;
+  }
+
+  .navegacao > img {
+     width: 15%;
+     margin-bottom: 1%;
   }
 
   .titulo {
