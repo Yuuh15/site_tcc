@@ -31,6 +31,7 @@ html {
      align-items: center;
      justify-content: space-between;
      height: 7vh;
+     padding: 2rem;
 }
 .titulo {
      display: flex;
@@ -62,10 +63,14 @@ html {
      transition: 0.25s;
 }
 .links > a:hover {
-     scale: 1.5;
+     scale: 1.25;
      background-color: #fff;
      color: #252525;
      cursor: pointer;
+}
+
+.slogan {
+     font-family: cursive;
 }
 
 header {
@@ -203,7 +208,7 @@ main > h2 {
 }
 
 .el {
-     height: 300px; /* Or any fixed height that suits your design */
+     height: 300px; 
      width: 17.5%;
      transition: 0.2s;
      position: relative;
@@ -224,7 +229,7 @@ main > h2 {
      height: 100%;
      background-color: #252525;
      opacity: 55%;
-     pointer-events: none; /*faz com que o elemento não bloqueie clicks*/
+     pointer-events: none; 
      transition: opacity 0.25s ease;
 }
 .el:hover::after {
@@ -237,18 +242,18 @@ main > h2 {
 }
 
 .image {
-     width: 100%; /* Changed from 250% */
+     width: 100%; 
      height: 100%;
      display: flex;
      justify-content: center;
      align-items: center;
-     position: relative; /* Changed from absolute */
+     position: relative; 
 }
 
 .image img {
      max-width: 100%;
      height: 100%;
-     object-fit: cover; /* Added object-fit */
+     object-fit: cover; 
 }
 
 .content {
@@ -262,7 +267,7 @@ main > h2 {
 }
 
 .content h3 {
-     /* margin-left: 40px; */
+
      transform: translateX(-20px);
      display: flex;
      flex-wrap: nowrap;
@@ -270,7 +275,6 @@ main > h2 {
 }
 
 .container p {
-     /* margin-left: 60px; */
      transform: translateX(40px);
      display: flex;
      flex-wrap: nowrap;
@@ -278,7 +282,6 @@ main > h2 {
 }
 
 .content i {
-     /* margin-left: 5px; */
      transform: translateX(-40px);
 }
 
@@ -294,6 +297,7 @@ footer {
      display: grid;
      grid-template-columns: repeat(4, 1fr);
      gap: 0.5rem;
+     padding: 2rem;
 }
 
 .conteinerfooter-grid ul,
@@ -315,10 +319,13 @@ ul > li > a {
      padding-left: 7px;
 }
 
-/* Media query for mobile devices (example: screens smaller than 768px) */
+.redes ul > li > a:hover {
+     color: #fff;
+     cursor: pointer;
+}
 @media (max-width: 768px) {
   .navegacao {
-    flex-direction: column; /* Stack navigation items vertically */
+    flex-direction: column; 
     height: auto;
     padding: 10px 0;
   }
@@ -330,7 +337,7 @@ ul > li > a {
 
   .links {
     width: 100%;
-    flex-direction: column; /* Stack links vertically */
+    flex-direction: column; 
     margin-right: 0;
   }
 
@@ -340,12 +347,12 @@ ul > li > a {
   }
 
   .sobre {
-    flex-direction: column; /* Stack "sobre" sections vertically */
+    flex-direction: column; 
     height: auto;
   }
 
   .nossa {
-    width: 80%; /* Make "nossa" sections wider */
+    width: 80%; 
     margin: 10px auto;
   }
 
@@ -354,7 +361,7 @@ ul > li > a {
   }
 
   .ht {
-    width: 90%; /* Make "ht" sections wider */
+    width: 90%; 
   }
 
   .main {
@@ -362,22 +369,22 @@ ul > li > a {
   }
 
   .container {
-    flex-direction: column; /* Stack elements in the container */
+    flex-direction: column; 
     width: 90%;
     height: auto;
   }
 
   .el {
-    width: 100%; /* Each element takes full width */
+    width: 100%; 
     margin-bottom: 10px;
   }
 
   .el:hover {
-    width: 100%; /* On hover, still take full width */
+    width: 100%; 
   }
 
   .containerfooter-grid {
-    grid-template-columns: repeat(1, 1fr); /* Stack footer columns */
+    grid-template-columns: repeat(1, 1fr); 
     text-align: center;
   }
 }
