@@ -34,18 +34,16 @@ html {
      padding: 2rem;
 }
 
-.navegacao > img {
+.titulo > img {
      border-radius: 13%;
      width:  5%;
-     margin-top: 5%;
-     margin-left: 7%;
+     margin-right: 2%;
 }
 
 .titulo {
      display: flex;
      align-items: center;
      justify-content: center;
-     margin-right: 13%;
 }
 .titulo > h2 {
      font-weight: bold;
@@ -389,14 +387,15 @@ ul > li > a {
     padding: 10px 0;
   }
 
-  .navegacao > img {
-     width: 15%;
-     margin-bottom: 1%;
-  }
-
   .titulo {
     margin-left: 0;
     margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titulo > img {
+     width: 15%;
   }
 
   .links {
